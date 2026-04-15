@@ -70,7 +70,9 @@ export default function AboutSection() {
 
         {/* Left: photo */}
         <div className="about-photo-col sr">
-          <div className="about-photo-ph" />
+          <div className="about-photo-ph">
+            <img src="/About.jpg" alt="Hricha Sharma" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', borderRadius: 20 }} />
+          </div>
         </div>
 
         {/* Right: text content */}

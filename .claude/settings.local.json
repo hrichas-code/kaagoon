@@ -18,7 +18,9 @@
       "Bash(node -e \"require\\('./components/LogoSVG.tsx'\\)\")",
       "Bash(jobs -l)",
       "Bash(pkill -f \"next dev\")",
-      "Bash(pkill -f \"next\")"
+      "Bash(pkill -f \"next\")",
+      "Bash(git -C /Users/hricha/Documents/kaagoon add .)",
+      "Bash(git -C /Users/hricha/Documents/kaagoon status)"
     ]
   }
 }

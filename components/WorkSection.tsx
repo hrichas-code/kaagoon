@@ -15,7 +15,6 @@ function ArrowSvg() {
   )
 }
 
-
 export default function WorkSection() {
   const [moreOpen, setMoreOpen] = useState(false)
 
@@ -34,7 +33,7 @@ export default function WorkSection() {
             <div className="work-sec-num">01</div>
             <h2 className="work-title">Selected<br /><em>Work</em></h2>
           </div>
-          <span className="work-sub">3 CASE STUDIES</span>
+          <span className="work-sub">2 CASE STUDIES</span>
         </div>
         <div className="case-list">
 
@@ -47,9 +46,9 @@ export default function WorkSection() {
                   <span className="tag">POS / Kiosk</span>
                   <span className="tag">B2C</span>
                 </div>
-                <div className="case-co">Resimator Oy</div>
+                <div className="case-co">Resimator Oy · 2025</div>
                 <h3 className="case-title">mAI Food — Self-service kiosk experience</h3>
-                <p className="case-desc-line">[ Add one sharp line about what changed for the user. ]</p>
+                <p className="case-desc-line">Designed the full scan-to-checkout flow for a smart restaurant POS — from zero to shipped MVP.</p>
               </div>
               <div className="case-bottom">
                 <div>
@@ -81,7 +80,7 @@ export default function WorkSection() {
                   <span className="tag">Fintech</span>
                   <span className="tag">Mobile</span>
                 </div>
-                <div className="case-co">FoneNXT / F1Soft Group</div>
+                <div className="case-co">FoneNXT / F1Soft Group · 2023–25</div>
                 <h3 className="case-title">OrangeNXT</h3>
                 <p className="case-desc-line">Users weren&apos;t confused — they were afraid. We found where trust broke down and redesigned the onboarding flow. Conversion went from 40% to 76%.</p>
               </div>
@@ -132,60 +131,6 @@ export default function WorkSection() {
             </div>
           </div>
 
-          {/* CS 3: TIME.com */}
-          <div className="case-item sr">
-            <div className="case-info">
-              <div className="case-info-top">
-                <div className="case-tags">
-                  <span className="tag hot">AI &amp; Tech</span>
-                  <span className="tag">Chatbot</span>
-                  <span className="tag">Mobile-first</span>
-                </div>
-                <div className="case-co">TIME.com · Fusemachines</div>
-                <h3 className="case-title">Chatbot for TIME.com</h3>
-                <p className="case-desc-line">Vaccine misinformation was spreading faster than facts. We built the AI that pushed back.</p>
-              </div>
-              <div className="case-bottom">
-                <div>
-                  <div className="case-metric-val">NLP</div>
-                  <div className="case-metric-lbl">AI-powered Q&amp;A</div>
-                </div>
-                <a className="case-link" href="/time" target="_blank" rel="noopener noreferrer" style={{ position: 'relative', zIndex: 10 }}>
-                  View case study <span className="arr"><ArrowSvg /></span>
-                </a>
-              </div>
-            </div>
-            <div className="case-vis">
-              <div className="vbg vbg-mid">
-                <div className="chat">
-                  <div className="cb-row">
-                    <div className="cb-av" style={{ background: '#c8102e' }}>T</div>
-                    <div className="cb" style={{ background: '#1c2128' }}>
-                      <div className="cb-t" style={{ color: '#e6edf3' }}>Are COVID-19 vaccines safe?</div>
-                    </div>
-                  </div>
-                  <div className="cb-row r">
-                    <div className="cb-av" style={{ background: '#6c63ff' }}>AI</div>
-                    <div className="cb r" style={{ background: '#6c63ff' }}>
-                      <div className="cb-t" style={{ color: 'white' }}>Based on trusted sources, vaccines are safe and effective...</div>
-                    </div>
-                  </div>
-                  <div className="cb-row">
-                    <div className="cb-av" style={{ background: '#1c2128' }} />
-                    <div className="cb" style={{ background: '#1c2128', width: 120 }}>
-                      <div style={{ height: 2, background: '#30363d', borderRadius: 1, marginBottom: 4, width: '90%' }} />
-                      <div style={{ height: 2, background: '#30363d', borderRadius: 1, width: '60%' }} />
-                    </div>
-                  </div>
-                </div>
-                <div style={{ position: 'absolute', top: 20, right: 20, background: '#c8102e', borderRadius: 3, padding: '5px 10px' }}>
-                  <div style={{ fontFamily: 'var(--pixel)', fontWeight: 900, fontSize: 11, color: 'white', letterSpacing: 1 }}>TIME</div>
-                </div>
-              </div>
-              <div className="case-n">03</div>
-            </div>
-          </div>
-
         </div>
 
         <div className="work-more-row sr">
@@ -207,7 +152,6 @@ export default function WorkSection() {
           </div>
           <div className="mp-modal-body">
             <div className="more-projects-grid">
-
               <div className="bc">
                 <div className="bc-bgn">04</div>
                 <div className="bc-thumb"><span className="bc-thumb-ph">Add project thumbnail</span></div>
@@ -221,7 +165,6 @@ export default function WorkSection() {
                 </div>
                 <div className="bc-role">Lead Designer · Product Manager · Prototyping</div>
               </div>
-
               <div className="bc">
                 <div className="bc-bgn">05</div>
                 <div className="bc-thumb"><span className="bc-thumb-ph">Add project thumbnail</span></div>
@@ -235,7 +178,6 @@ export default function WorkSection() {
                 </div>
                 <div className="bc-role">End-to-end Design · Web &amp; Mobile</div>
               </div>
-
               <div className="bc">
                 <div className="bc-bgn">06</div>
                 <div className="bc-thumb"><span className="bc-thumb-ph">Add project thumbnail</span></div>
@@ -249,12 +191,10 @@ export default function WorkSection() {
                 </div>
                 <div className="bc-role">Freelance · UX Audit · UI Redesign</div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-
     </>
   )
 }

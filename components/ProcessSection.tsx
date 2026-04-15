@@ -594,9 +594,18 @@ export default function ProcessSection() {
     scatterTargets(currentSteps)
     rafId = requestAnimationFrame(gameLoop)
 
+    // Stop music when process section scrolls out of view
+    const section = document.querySelector('.process-sec')
+    const visibilityObserver = section ? new IntersectionObserver(
+      ([entry]) => { if (!entry.isIntersecting) stopMusic() },
+      { threshold: 0.05 }
+    ) : null
+    if (section && visibilityObserver) visibilityObserver.observe(section)
+
     return () => {
       cancelAnimationFrame(rafId)
       stopMusic()
+      visibilityObserver?.disconnect()
       if (audioCtx) { audioCtx.close(); audioCtx = null }
       gc.removeEventListener('mousemove', onMouseMove)
       gc.removeEventListener('touchmove', onTouchMove)

@@ -18,19 +18,29 @@ export default function CustomCursor() {
     }
     rafId = requestAnimationFrame(tick)
 
-    const addBig = () => cur!.classList.add('big')
+    const addBig    = () => cur!.classList.add('big')
     const removeBig = () => cur!.classList.remove('big')
-    const addLite = () => cur!.classList.add('lite')
+    const addLite   = () => cur!.classList.add('lite')
     const removeLite = () => cur!.classList.remove('lite')
-    const addClick = () => cur!.classList.add('clicking')
+    const addClick  = () => cur!.classList.add('clicking')
     const removeClick = () => cur!.classList.remove('clicking')
+    const addView    = () => { cur!.classList.add('view'); cur!.classList.remove('big') }
+    const removeView = () => cur!.classList.remove('view')
+
     document.addEventListener('mousedown', addClick)
     document.addEventListener('mouseup', removeClick)
 
-    const hoverEls = document.querySelectorAll('a,button,.st,.bc,.case-item,.exp-row')
+    const hoverEls = document.querySelectorAll('a,button,.st,.bc,.exp-row')
     hoverEls.forEach(el => {
       el.addEventListener('mouseenter', addBig)
       el.addEventListener('mouseleave', removeBig)
+    })
+
+    // View cursor for case study cards
+    const cards = document.querySelectorAll('.sw-card')
+    cards.forEach(el => {
+      el.addEventListener('mouseenter', addView)
+      el.addEventListener('mouseleave', removeView)
     })
 
     const darkSections = document.querySelectorAll('.process-sec,.contact-sec,.speaking-sec,footer')
@@ -47,5 +57,9 @@ export default function CustomCursor() {
     }
   }, [])
 
-  return <div id="cur" />
+  return (
+    <div id="cur">
+      <span className="cur-view-txt">VIEW</span>
+    </div>
+  )
 }
