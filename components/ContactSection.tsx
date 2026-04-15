@@ -37,7 +37,7 @@ export default function ContactSection() {
           Let&apos;s<br />make<br />something<br /><em>great.</em>
         </h2>
         <div className="contact-actions sr">
-          <a href="mailto:hrichasharma@email.com" className="btn-light btn-mag">Say hello ✉</a>
+          <a href="mailto:hrichas@gmail.com" className="btn-light btn-mag">Say hello ✉</a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="btn-outline btn-mag">
             LinkedIn
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style={{display:'inline-block',verticalAlign:'middle'}}>

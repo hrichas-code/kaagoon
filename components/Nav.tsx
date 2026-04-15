@@ -166,7 +166,7 @@ export default function Nav() {
             <a href="#contact" className="menu-link active" onClick={close}>Hire me</a>
           </nav>
           <div className="menu-bottom">
-            <a href="mailto:hrichasharma@email.com" className="menu-social">hrichasharma@email.com</a>
+            <a href="mailto:hrichas@gmail.com" className="menu-social">hrichas@gmail.com</a>
             <span className="menu-tag">BERLIN · AVAILABLE_NOW</span>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="menu-social">LinkedIn ↗</a>
           </div>
